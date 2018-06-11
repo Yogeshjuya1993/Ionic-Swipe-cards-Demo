@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>img</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <!-- <zoom-area [(scale)]="scale" (afterZoomIn)="afterZoomIn($event)" (afterZoomOut)="afterZoomOut($event)" [(controls)]="showControls">
+    <div>Zoom It</div>
+    or
+    <img src="assets/imgs/logo.png" alt="Zoom It">
+</zoom-area> -->
+<img src="assets/imgs/logo.png" #myImage (click)="presentImage(myImage)" />
+</ion-content>
